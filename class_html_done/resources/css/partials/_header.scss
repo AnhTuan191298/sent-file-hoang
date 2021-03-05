@@ -1,0 +1,221 @@
+// Begin Header
+#header {
+    background-color: #fff;
+    height: 76px;
+
+    .header__wp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .header__logo {
+        width: 170px;
+        margin-right: 60px;
+        margin-top: 10px;
+    
+        .header__logo-img {
+            width: 100%;
+        }
+    }
+    
+    .nav {
+        flex: 1;
+    }
+    
+    .nav__list {
+        display: flex;
+        justify-content: space-between;
+    
+        .nav__list-item {
+            list-style-type: none;
+            position: relative;
+        }
+    }
+    
+    .nav__list-link {
+        text-decoration: none;
+        color: #727475;
+        font-size: 16px;
+        display: inline;
+    }
+    
+    .subnav {
+        position: absolute;
+        padding-top: 20px;
+        left: -20px;
+        width: 190px;
+        z-index: 999;
+        display: none;
+    
+        .subnav {
+            left: 100%;
+            top: 0px;
+            padding-left: 20px;
+            padding-top: 0;
+            width: 210px;
+        }
+    
+        .subnav__item {
+            background-color: #fff;
+            box-shadow: 0px 2px 5px #f1f1f1;
+            width: 100%;
+            list-style-type: none;
+            padding: 15px 20px;
+            border-bottom: 1px solid #f1f1f1;
+            position: relative;
+        }
+    
+        .subnav__item:hover {
+            background-color: #f9f9f9;
+        }
+    
+        .subnav__link {
+            font-size: 14px;
+            color: #555555;
+            width: 100%;
+            text-decoration: none;
+            display: block;
+        }
+    
+        .subnav__item .badge {
+            position: absolute;
+            right: 15px;
+            top: 17px;
+            border-radius: 3px;
+            color: #fff;
+            font-size: 10px;
+            line-height: 10px;
+            padding: 3px 5px;
+        }
+    
+        .subnav__item .subnav__icon {
+            position: absolute;
+            right: 15px;
+            top: 18px;
+            color: #555555;
+            font-size: 15px;
+        }
+
+        .badge--red {
+            background-color: #f76570;
+        }
+
+        .badge--blue {
+            background-color: #14b9d5;
+        }
+
+        .badge--green {
+            background-color: #1bbc9b;
+        }
+    
+    }
+    
+    .sub-menu:hover > .subnav{
+        display: block;
+    }
+
+    // Begin Tablet and Mobile
+
+    .header_menu {
+        display: none;
+    }
+
+    .nav__overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 99;
+        display: none;
+        animation: overlayFadeIn linear 0.3s ;
+    }
+
+    .nav__responsive {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        max-width: 100%;
+        background-color: rgb(243, 164, 107);
+        z-index: 999;
+        padding: 40px;
+        transform: translateX(100%);
+        opacity: 0;
+        transition: transform linear 0.4s, opacity linear 0.4s;
+        z-index: 1111;
+        overflow-y: auto;
+
+        .nav__responsive-close {
+            font-size: 35px;
+            color: #fff;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        .nav__list-responsive-item {
+            display: inline-block;
+            width: 100%;
+            padding: 0px 0px 20px 0px;
+
+            .nav__list-responsive-link {
+                padding: 10px 0px;
+                display: inline-block;
+                font-size: 24px;
+                text-transform: capitalize;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+
+        .sub-menu {
+
+            .subnav-responsive {
+
+                .subnav-responsive__item {
+                    padding: 0px 20px;
+                    text-align: left;
+                    list-style-type: none;
+
+                    .subnav-responsive__link {
+                        font-size: 14px;
+                        padding: 10px 0px;
+                        display: inline-block;
+                        text-transform: capitalize;  
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+      
+    #nav__responsive-input:checked ~ .nav__overlay {
+        display: block;
+    }
+
+    #nav__responsive-input:checked ~ .nav__responsive {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    @keyframes overlayFadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+    // End Tablet and Mobile
+}
+
+// End Header

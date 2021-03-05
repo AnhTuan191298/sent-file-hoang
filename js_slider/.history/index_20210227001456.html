@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>Slider</title>
+    <style>
+        .slider {
+            width: 980px;
+            height: 380px;
+            overflow: hidden;
+            position: relative;
+        }
+        .slider-content {
+            display: flex;
+            transition: ease 0.5s;
+            transform: translateX(-100%);
+        }
+        .slider {
+            margin: 0 auto;
+        }
+        .controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+        }
+        .control {
+            color: #fff;
+            font-size: 32px;
+            padding: 20px;
+        }
+        .control:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+        .navigator {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 30px;
+            display: flex;
+        }
+        .nav {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #000;
+            border: 2px solid #ccc;
+            margin: 0 10px;
+        }
+        .nav:hover,
+        .nav.current {
+            cursor: pointer;
+            background-color: #ccc;
+            border-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slider-content">
+            <div class="slider-item">
+                <img src="https://jssors8.azureedge.net/demos/image-slider/img/px-action-athlete-athletes-848618-image.jpg" alt="">
+            </div>
+            <div class="slider-item">
+                <img src="https://jssors8.azureedge.net/demos/image-slider/img/px-fun-man-person-2361598-image.jpg" alt="">
+            </div>
+            <div class="slider-item">
+                <img src="https://jssors8.azureedge.net/demos/image-slider/img/px-beach-daylight-fun-1430675-image.jpg" alt="">
+            </div>
+            <div class="slider-item">
+                <img src="https://jssors8.azureedge.net/demos/image-slider/img/faded-monaco-scenery-evening-dark-picjumbo-com-image.jpg" alt="">
+            </div>
+            <div class="slider-item">
+                <img src="https://jssors8.azureedge.net/demos/image-slider/img/px-bloom-blossom-flora-65219-image.jpg" alt="">
+            </div>
+        </div>
+        <div class="controls">
+            <div class="control prev">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="control next">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+        <div class="navigator">
+            <div class="nav current"></div>
+            <div class="nav"></div>
+            <div class="nav"></div>
+            <div class="nav"></div>
+            <div class="nav"></div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

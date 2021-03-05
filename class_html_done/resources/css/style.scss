@@ -1,0 +1,459 @@
+ @import './grid.scss';
+ @import 'variables';
+ @import 'partials/header';
+ @import 'partials/slider';
+ @import 'partials/footer';
+ @import 'search-2.scss'; 
+ @import './services.scss'; 
+ @import './about-us.scss';
+ @import './berlin.scss';
+ @import './sticked.scss';
+ @import './responsive.scss';  
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+html {
+    scroll-behavior: smooth;
+}
+
+ #wrapper {
+    font-family: 'Poppins', sans-serif; 
+    letter-spacing: 1px; 
+    overflow: hidden;
+ } 
+
+
+
+
+// --------------------Begin Content Home Page---------------------
+
+// Begin Content Experience
+.content__experience {
+    margin-top: 60px;
+    position: relative;
+}
+
+.content__experience-main {
+    padding: 70px;
+
+    .content__experience-title {
+        margin-bottom: 35px; 
+    }
+
+    .content__experience-text {
+        color: #a3a3a3;
+        font-size: 14px;
+        line-height: 27px;
+    }
+
+    .content__experience-btn {
+        margin-top: 50px;
+    }
+}
+
+.content__experience-video {
+    background-image: url(/tuanna/class_html_done/assets/img/banner/banner_1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 50%;
+    visibility: inherit;
+    z-index: 20;
+    height: 660px;
+    position: relative;
+    padding: 0 15px;
+
+    .content__experience-video-play {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+
+        a {
+            text-decoration: none;
+
+        }
+
+        img {
+            width: 80px;
+            transition: opacity ease 0.8s;
+        }
+
+        img:hover {
+            opacity: 0.5;
+        }
+    }
+}
+
+.content__travel {
+    width: 920px;
+    min-height: 230px;
+    position: absolute;
+    left: 145px;
+    bottom: 26px;
+    z-index: 50;
+
+    .content__travel-main {
+        padding: 15px;
+        position: relative;
+
+        .content__travel-price {
+            position: absolute;
+            top: 35px;
+            right: 35px;
+        }
+    }
+
+    .content__travel-img {
+        width: 100%; 
+    }
+}
+// End Content Experience
+
+//Begin Content Services
+.content__services {
+    background-color: #555555;
+    margin-top: 60px;
+    padding: 80px 138px;
+}
+
+.content__services-ders,
+.content__services-title {
+    text-align: center;
+    color: #fff;
+}
+
+.content__services-main {
+    margin-top: 50px;
+}
+
+.content__services-detail-imgs {
+    width: 50px;
+}
+
+.content__services-detail-title {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.content__services-detail-text {
+    margin: 20px 0px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+}
+//End Content Services
+
+// Begin Content Summer
+.content__summer {
+    margin-top: 60px;
+    padding-bottom: 15px;
+}
+
+.content__summer-sale {
+    background-color: #f3a46b;
+    text-align: center;
+    padding: 40px;
+    height: 100%;
+
+    .content__summer-ders {
+        text-transform: uppercase;
+        color: #fff;
+        margin-top: 45px;
+        margin-bottom: 28px;
+    }
+
+    .content__summer-title {
+        color: #fff;
+        font-size: 40px;
+        line-height: 55px; 
+    }
+
+    .content__summer-backup {
+        font-size: 40px;
+        font-weight: bold;
+        color: #fff;
+        line-height: 55px; 
+    }
+
+    .summer__date {
+        margin-top: 35px;
+    }
+
+    .summer__countdown {
+        h2 {
+            color: #fff;
+            font-size: 36px;
+            margin: 0;
+            font-weight: normal;
+        }
+
+        h3 {
+            color: #fff;
+            font-weight: normal;
+            letter-spacing: 2px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .content__summer-sale-btn {
+        color: #f3a46b !important;
+        margin: 25px 0px;
+    }
+}
+
+.content__summer-detail {
+    .content__summer-detail-img {
+        position: relative; 
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        .content__summer-detail-img-sale {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 13px;
+            line-height: 13px;
+            text-decoration: none;
+            background-color: #555555;
+            color: #fff;
+            border-radius: 30px;
+            text-align: center;
+            padding: 5px 12px 4px;
+        }
+    }
+
+    .content__summer-detail-main {
+        padding: 30px;
+        border: 1px solid #f1f1f1;
+        border-top: none;
+        position: relative;
+
+        .content__summer-detail-main-icon {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            top: -26px;
+            right: 20px;
+            cursor: pointer;
+
+            img {
+                width: 26px;
+            }
+        }
+
+        .content__summer-detail-main-location {
+            padding-bottom: 15px;
+            border-bottom: 1px solid #f1f1f1;
+
+            .location-link {
+                font-size: 20px;
+                color: #555555;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .location-continents {
+                text-decoration: none;
+                color: #9a9a9a;
+                font-weight: normal;
+                letter-spacing: 2px;
+                font-size: 15px;
+
+                img {
+                    width: 14px;
+                }
+            }
+        }
+
+        .content__summer-detail-main-price {
+            padding: 10px 0px;
+            border-bottom: 1px solid #f1f1f1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+           .price-text {
+                .price-text-top,
+                .price-text-bottom {
+                    color: #555555;
+                    text-decoration: none;
+                    font-size: 13px;
+                    line-height: 13px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                }
+
+                .price-text-plus {
+                    position: relative;
+                    font-size: 10px;
+                    padding: 1px 10px;
+                    letter-spacing: 3px;
+                    cursor: pointer;
+
+                    &:hover .price-text-option {
+                        display: block;
+                    }
+
+                    .price-text-option {
+                        position: absolute;
+                        background-color: #555555;
+                        letter-spacing: 1px;
+                        color: #fff;
+                        padding: 10px 12px;
+                        font-size: 11px;
+                        line-height: 16px;
+                        left: 2px;
+                        bottom: -46px;
+                        display: none;
+                    }
+
+                    .price-text-option::before {
+                        content: "";
+                        border: 8px solid;
+                        border-color: transparent transparent #555555 transparent;
+                        position: absolute;
+                        left: 12%;
+                        top: -40%;
+                    }
+                }
+           }
+
+           .price-main {
+               a {
+                   color: #555555;
+                   font-size: 25px;
+                   line-height: 25px;
+                   font-weight: normal;
+                   text-decoration: none;
+               }
+
+               .price-main-sale {
+                   text-decoration: line-through;
+                   color: #9a9a9a;
+                   font-size: 20px;
+                   line-height: 20px; 
+               }
+           }
+        }
+
+        .content__summer-detail-main-ders {
+            padding: 19px 0px;
+            color: #9a9a9a;
+            font-size: 14px;
+            line-height: 27px;
+        }
+    }
+}
+// End Content Summer
+
+// Begin Content Blog
+.content__blog {
+    margin: 60px 0px 70px;
+
+    .content__blog-ders,
+    .content__blog-title {
+        text-align: center;
+    }
+
+    .content__blog-title {
+        margin-bottom: 48px;
+    }
+
+    .content__blog-main {
+        border: 1px solid #f1f1f1;
+        display: flex;
+        height: 100%;
+
+        .content__blog-img {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-top: 50%;
+            visibility: inherit;
+            z-index: 20;
+            height: 100%;
+            flex: 1.25;
+        }
+
+        .content__blog-detail {
+            padding: 30px;
+            flex: 1;
+
+            .content__blog-detail-ders {
+                color: #9a9a9a;
+                letter-spacing: 2px;
+                font-size: 14px;
+                line-height: 27px;
+            }
+
+            .content__blog-detail-title {
+                color: #555555;
+                letter-spacing: 0px;
+                font-size: 20px;
+                line-height: 20px;
+                font-weight: bold;
+                margin-bottom: 20px;
+                margin-top: 10px;
+            }
+
+            .content__blog-detail-text {
+                color: #9a9a9a;
+                font-size: 14px;
+                line-height: 27px;
+                margin-bottom: 20px;
+            }
+
+            .content__blog-detail-btn {
+                border-radius: 30px;
+                color: #fff;
+                padding: 5px 20px;
+                text-decoration: none;
+                font-size: 14px;
+                display: inline-block;
+                line-height: 27px;
+            }
+
+            .btn--bg-white-color-green {
+                background-color: #fff;
+                color: #1bbc9b;
+            }
+
+            .btn--bg-white-color-blue {
+                background-color: #fff;
+                color: #14b9d5;
+            }
+        }
+
+        .content__blog-detail--purple {
+            background-color: #ba71da;
+        }
+
+        .content__blog-detail--red {
+            background-color: #f76570;
+        }
+
+        .content__blog-detail--green {
+            background-color: #1bbc9b;
+        }
+
+        .content__blog-detail--blue {
+            background-color: #14b9d5;
+        }
+    }
+}
+// End Content Blog
+
+
+
+// ---------------------End Content Home Page----------------------

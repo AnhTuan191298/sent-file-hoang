@@ -1,0 +1,143 @@
+#slider-about {
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 21%;
+  visibility: inherit;
+  z-index: 20; }
+  #slider-about .slider-about__opacity {
+    background-color: rgba(67, 74, 84, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; }
+    #slider-about .slider-about__opacity .slider-about__title {
+      font-size: 35px;
+      font-weight: bold;
+      text-align: left;
+      letter-spacing: 0px;
+      color: #fff;
+      position: absolute;
+      bottom: 46px; }
+
+#content-about .content-about__introduce {
+  margin-top: 60px;
+  margin-bottom: 60px; }
+  #content-about .content-about__introduce .content-about__introduce-main .content-about__introduce-main-title {
+    margin: 10px 0px;
+    padding: 0px 40px 0px 10px; }
+    #content-about .content-about__introduce .content-about__introduce-main .content-about__introduce-main-title h1 {
+      text-align: right;
+      font-size: 40px;
+      line-height: 60px;
+      letter-spacing: 0px;
+      font-weight: bold;
+      color: #555555; }
+  #content-about .content-about__introduce .content-about__introduce-main .content-about__introduce-main-text {
+    padding-top: 9px; }
+    #content-about .content-about__introduce .content-about__introduce-main .content-about__introduce-main-text .content-about__introduce-main-text-detail {
+      margin-top: 10px; }
+      #content-about .content-about__introduce .content-about__introduce-main .content-about__introduce-main-text .content-about__introduce-main-text-detail p {
+        color: #9a9a9a;
+        font-size: 14px;
+        line-height: 27px; }
+
+#content-about .content-about__recommend {
+  margin-bottom: 30px; }
+  #content-about .content-about__recommend .content-about__recommend-bg {
+    position: relative;
+    padding-top: 76.7567567%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    #content-about .content-about__recommend .content-about__recommend-bg .content-about__recommend-opacity {
+      background: linear-gradient(to bottom, rgba(101, 100, 96, 0) 0%, rgba(101, 100, 96, 0.65) 100%);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0; }
+      #content-about .content-about__recommend .content-about__recommend-bg .content-about__recommend-opacity .content-about__recommend-detail {
+        bottom: 30px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center; }
+        #content-about .content-about__recommend .content-about__recommend-bg .content-about__recommend-opacity .content-about__recommend-detail h3 {
+          font-size: 20px;
+          color: #fff;
+          font-size: 20px; }
+        #content-about .content-about__recommend .content-about__recommend-bg .content-about__recommend-opacity .content-about__recommend-detail h6 {
+          font-size: 14px;
+          letter-spacing: 2px;
+          font-weight: normal;
+          color: #fff;
+          line-height: 13px; }
+
+.content-about__count {
+  background-image: url("/tuanna/class_html_done/assets/img/slider/slide-06.jpg");
+  background-repeat: no-repeat;
+  background-position: center -135px;
+  background-size: cover;
+  padding-top: 31.75%;
+  position: relative;
+  margin-top: 70px;
+  margin-bottom: 70px; }
+  .content-about__count .content-about__count-main {
+    background: linear-gradient(to bottom, rgba(101, 100, 96, 0.1) 0%, rgba(101, 100, 96, 0.6) 60%, rgba(101, 100, 96, 0.8) 100%);
+    padding: 100px 137px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; }
+    .content-about__count .content-about__count-main .content-about__count-main-up {
+      margin-bottom: 70px; }
+      .content-about__count .content-about__count-main .content-about__count-main-up .content-about__count-main-up-img {
+        width: 55px; }
+      .content-about__count .content-about__count-main .content-about__count-main-up .content-about__count-main-up-title {
+        color: #ffffff;
+        line-height: 50px;
+        font-size: 40px;
+        padding-left: 10px; }
+    .content-about__count .content-about__count-main .content-about__count-main-down .content-about__count-main-down-title {
+      text-align: center;
+      color: #ffffff;
+      font-size: 50px; }
+    .content-about__count .content-about__count-main .content-about__count-main-down .content-about__count-main-down-text {
+      color: #ffffff;
+      text-align: center;
+      font-size: 15px;
+      line-height: 30px;
+      letter-spacing: 2px;
+      font-weight: lighter; }
+
+.content-about__services {
+  margin-bottom: 85px; }
+  .content-about__services .content-about__services-main .content-about__services-main-img {
+    width: 50px;
+    padding-top: 8px; }
+  .content-about__services .content-about__services-main .content-about__services-main-text {
+    font-size: 14px;
+    line-height: 24px;
+    color: #9a9a9a;
+    margin-bottom: 15px; }
+  .content-about__services .content-about__services-main .content-about__services-main-link {
+    font-size: 13px;
+    line-height: 13px; }
+  .content-about__services .content-about__services-btn {
+    width: 100%;
+    text-align: center; }
+    .content-about__services .content-about__services-btn a {
+      border-radius: 30px;
+      letter-spacing: 1px;
+      line-height: 14px;
+      font-size: 14px;
+      background-color: #555555;
+      padding: 15px 35px;
+      color: #ffffff;
+      text-decoration: none; }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper {
+            width: 980px;
+            margin: 15px auto;
+            /* overflow: hidden; */
+        }
+        .slider {
+            display: flex;
+        }
+        .actionNext {
+            animation: nextAcion ease 0.5s reverse;
+        }
+        .actionPrev {
+            animation: prevAcion ease 0.5s reverse;
+        }
+        /* Animation */
+        @keyframes nextAcion {
+            from {
+                transform : translateX(0%)
+            }
+            to{
+                transform : translateX(-100%)
+            }
+        }
+        @keyframes prevAcion {
+            from {
+                transform : translateX(0%)
+            }
+            to{
+                transform : translateX(100%)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="slider">
+            <img src="./assets/img/img_1.jpg" alt="slider">
+            <img src="./assets/img/img_2.jpg" alt="slider">
+            <img src="./assets/img/img_3.jpg" alt="slider">
+            <img src="./assets/img/img_4.jpg" alt="slider">
+            <img src="./assets/img/img_5.jpg" alt="slider">
+        </div>
+    </div>
+    <a id="prevBtn" href="#">Prev</a>
+    <a id="nextBtn" href="#">Next</a>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

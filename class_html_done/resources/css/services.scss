@@ -1,0 +1,321 @@
+// Begin Slider
+#slider-services {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: relative;
+    padding-top: 21%;
+    visibility: inherit;
+    z-index: 20;
+
+    .slider-services__opacity {
+        background-color: rgba(67, 74, 84, 0.3);
+        position: absolute;
+        top: 0;
+        bottom: 0; 
+        right: 0;
+        left: 0;
+
+        .slider-services__title {
+            font-size: 35px;
+            font-weight: bold;
+            text-align: left;
+            letter-spacing: 0px;
+            color: #fff;
+            position: absolute;
+            bottom: 50px; 
+        }
+    }
+}
+// End Slider
+
+// --------------------Begin Content-----------------
+
+// Begin Content introduce
+.content-services__introduce {
+    margin: 50px 0px 60px;
+
+    .content-services__introduce-img { 
+        width: 50px;
+    }
+
+    .content-services__introduce-title {
+        margin-top: 10px;
+        font-size: 25px;
+        line-height: 25px;
+        color: #555555;
+    }
+
+    .content-services__introduce-text {
+        margin: 20px 0px;
+        font-size: 14px;
+        line-height: 24px;
+        color: #9a9a9a;
+    }
+
+    .content-services__introduce-link {
+        padding: 8px 12px;
+        font-size: 11px;
+        line-height: 11px;
+    }
+}
+// End Content introduce
+
+// Begin Content About
+.content-services__about {
+    margin-bottom: 60px;
+}
+
+.content-services__about-main {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 475px;
+    // padding-top: 128.54%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+    .content-services__about-detail {
+        background-color: rgba(255, 255, 255, 0.97);
+        padding: 40px;
+        height: 395px;
+        text-align: center;
+
+        h3 {
+            color: #9a9a9a;
+            font-size: 20px;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+
+        h5 {
+            color: #9a9a9a;
+            font-size: 15px;
+            line-height: 15px;
+            margin-bottom: 8px;
+
+        }
+
+        .content-services__about-underline {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 14px;
+
+            span {
+                display: inline-block;
+                background-color: #e4e4e4;
+                width: 30px;
+                height: 2px;
+            }
+        }
+
+        p {
+            color: #9a9a9a;
+            font-size: 14px;
+            line-height: 27px;
+            margin-bottom: 26px;
+        }
+
+        .content-services__about-link {
+            text-decoration: none;
+            color: #9a9a9a;
+            border: 1px solid #f1f1f1;
+            padding: 10px 20px;
+            line-height: 16px;
+            font-size: 14px;
+        }
+    }
+}
+// End Content About
+
+// Begin Content Facilities
+.content-services__facilities {
+    background-image: url('/tuanna/class_html_done/assets/img/slider/slide-04.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 551px;
+
+    .content-services__facilities-main {
+        background-color: rgba(101, 100, 96, 0.3);
+        width: 100%;
+        height: 100%;
+        padding: 85px 137px; 
+
+        .content-services__facilities-main-ders {
+            padding-top: 57px;
+
+            h1 {
+                color: #ffffff;
+                font-size: 50px;
+                line-height: 50px;
+                letter-spacing: 0px;
+                font-weight: bold; 
+            }
+
+            p {
+                color: #ffffff;
+                font-size: 13px;
+                line-height: 25px;
+                letter-spacing: 3px;
+                font-weight: lighter;
+                text-align: justify;
+                margin: 40px 0px;
+                padding-right: 40px;
+            }
+        }
+
+        .content-services__facilities-main-icon {
+
+            .content-services__facilities-main-icon-detail {
+                padding: 20px;
+                text-align: center;
+                border-radius: 15px;
+                background-color: #ffffff;
+                width: 100%;
+                height: 160px;
+
+                img {
+                    width: 40px;
+                }
+
+                h1 {
+                    color: #555555;
+                    font-size: 40px;
+                    line-height: 45px;
+                    margin-bottom: 10px;
+                }
+
+                h4 {
+                    color: #9a9a9a;
+                    font-weight: lighter;
+                    letter-spacing: 3px;
+                    font-size: 12px;
+                    line-height: 12px;
+                }
+            }
+        }
+    }
+
+    .content-services__facilities-icon {
+        // display: flex;
+        // justify-content: space-between;
+        margin-bottom: 60px;
+
+        .content-services__facilities-icon-detail {
+            height: 224px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            // flex: 1;
+            border: 1px solid #f1f1f1;
+
+            img {
+                width: 70px;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 14px;
+                letter-spacing: 2px;
+                font-weight: normal;
+                color: #9a9a9a;
+            }
+        }
+    }
+}
+// End Content Facilities
+
+// Begin Content Benefits
+.content-services__benefits {
+    margin-top: 284px;
+    padding-bottom: 80px;
+
+    .content-services__benefits-ders {
+        color: #9a9a9a;
+        text-align: center;
+    }
+
+    .content-services__benefits-title {
+        text-align: center;
+        color: #555555;
+    }
+
+    .content-services__benefits-main {
+        margin-top: 60px;
+
+        .content-services__benefits-detail-title {
+            color: #555555;
+            font-size: 25px;
+        }
+
+        .content-services__benefits-detail-text {
+            color: #9a9a9a;
+            margin: 20px 0px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+
+}
+// End Content Benefits
+
+// Begin Content Count
+.content-services__count {
+    background-image: url('/tuanna/class_html_done/assets/img/slider/slide-05.jpg');
+    background-repeat: no-repeat;
+    background-position: center -150px;
+    background-size: cover;
+    padding-top: 31.75%;
+    position: relative;
+
+    .content-services__count-main {
+        background: linear-gradient(to bottom, rgba(101,100,96,0.1) 0%,rgba(101,100,96,0.6) 60%,rgba(101,100,96,0.8) 100%);
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: 100px 137px;
+        position: absolute;
+
+        .content-services__count-main-up {
+            margin-bottom: 70px;
+
+            .content-services__count-main-up-img {
+                width: 55px;
+            }
+    
+            .content-services__count-main-up-title {
+                color: #ffffff;
+                line-height: 50px;
+                font-size: 40px;
+                padding-left: 10px; 
+            }
+        }
+
+        .content-services__count-main-down {
+
+            .content-services__count-main-down-title {
+                text-align: center;
+                color: #ffffff;
+                font-size: 50px;
+            }
+
+            .content-services__count-main-down-text {
+                color: #ffffff;
+                text-align: center;
+                font-size: 15px;
+                line-height: 30px;
+                letter-spacing: 2px;
+                font-weight: lighter;
+            }
+        }
+    }
+}
+// End Content Count
+
+// ---------------------End Content------------------

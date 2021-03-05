@@ -1,0 +1,85 @@
+#footer {
+    background-image: url('/tuanna/class_html_done/assets/img/banner/banner_1.jpg');
+    height: 498px;
+    // padding-top: 33.76%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .footer__content {
+        background-color: #fff;
+        padding: 37px;
+
+        .footer__content-ders-img {
+            width: 150px;
+            margin-bottom: 30px;
+        }
+
+        .footer__content-ders-text {
+            color: #9a9a9a; 
+            font-size: 14px;
+            line-height: 27px;
+            margin-bottom: 30px;
+            padding-right: 38px;
+
+            span {
+                text-decoration: underline;
+            }
+        }
+
+        .footer__content-ders-icon {
+            display: flex;
+
+            img {
+                width: 22px;
+                margin-right: 20px;
+            }
+        }
+
+        .fotter__contact {
+            padding-top: 25px;
+
+            h5 {
+                font-size: 14px;
+                line-height: 14px;
+                letter-spacing: 2px;
+                font-weight: bold;
+                color: #555555;
+                margin-bottom: 35px; 
+            }
+
+            li {
+                list-style-type: none;
+            }
+
+            img {
+               width: 10px;
+               margin-right: 8px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #9a9a9a;
+                font-size: 14px;
+                line-height: 27px;
+            }
+        }
+    }
+
+    .footer__copy-right {
+        display: flex;
+        background-color: #f3a46b;
+        padding: 20px;
+        justify-content: space-between;
+
+        p {
+            font-size: 12px;
+            line-height: 12px;
+            letter-spacing: 2px;
+            font-weight: normal;
+        }
+    }
+}

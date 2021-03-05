@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper {
+            width: 980px;
+            margin: 15px auto;
+            /* overflow: hidden; */
+        }
+        .slider {
+            display: flex;
+        }
+        .actionNext {
+            animation: nextAcion ease 0.5s;
+        }
+        .actionPrev {
+            animation: prevAcion ease 0.5s;
+        }
+        /* Animation */
+        @keyframes nextAcion {
+            from {
+                transform : translateX(0%)
+            }
+            to{
+                transform : translateX(-100%)
+            }
+        }
+        @keyframes prevAcion {
+            from {
+                transform : translateX(0%)
+            }
+            to{
+                transform : translateX(100%)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slider-content">
+            <div class="slider-item">
+                <img src="https://jssors8.azureedge.net/demos/image-slider/img/px-action-athlete-athletes-848618-image.jpg" alt="">
+            </div>
+            <div class="slider-item">
+                <img src="https://jssors8.azureedge.net/demos/image-slider/img/px-fun-man-person-2361598-image.jpg" alt="">
+            </div>
+            <div class="slider-item">
+                <img src="https://jssors8.azureedge.net/demos/image-slider/img/px-beach-daylight-fun-1430675-image.jpg" alt="">
+            </div>
+            <div class="slider-item">
+                <img src="https://jssors8.azureedge.net/demos/image-slider/img/faded-monaco-scenery-evening-dark-picjumbo-com-image.jpg" alt="">
+            </div>
+            <div class="slider-item">
+                <img src="https://jssors8.azureedge.net/demos/image-slider/img/px-bloom-blossom-flora-65219-image.jpg" alt="">
+            </div>
+        </div>
+        <div class="controls">
+            <div class="control prev">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="control next">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+        <div class="navigator">
+            <div class="nav current"></div>
+            <div class="nav"></div>
+            <div class="nav"></div>
+            <div class="nav"></div>
+            <div class="nav"></div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

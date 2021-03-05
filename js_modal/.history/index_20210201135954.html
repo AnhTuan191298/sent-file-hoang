@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .modal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .modal__action {
+            text-decoration: none;
+            padding: 15px;
+            background-color: blueviolet;
+            color: white;
+            font-weight: bold;
+        }
+        .layout {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .modal_show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+        }
+        .modal_show-contain {
+            position: relative;
+            background-color: white;
+            width: 500px;
+            min-height: 300px;
+        }
+        .modal_show__close {
+
+        }
+        .modal_show__close-img {
+            width: 25px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal_buttun">
+            <a class="modal__action" href="#">Show modal</a>
+        </div>
+    </div>
+    <div class="layout"></div>
+    <div class="modal_show">
+        <div class="modal_show-contain">
+            <div class="modal_show__close">
+                <img class="modal_show__close-img" src="./assets/imgs/times-circle-regular.svg" alt="close">
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

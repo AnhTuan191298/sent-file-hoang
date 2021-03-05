@@ -1,0 +1,701 @@
+//------------------------------ Begin Index -----------------------------
+/* Small PC >= 12024px and < 1400px */
+@media screen and (min-width: 63.9375em) and (max-width:  87.5em) {
+    #slider {
+
+        .slider__title {
+            display: none;
+        }
+
+        .slider__text {
+            top: 30%;
+        }
+    }
+
+    #content {
+        .content__experience {
+
+            .content__experience-main {
+                padding: 0 0 20px 0;
+            }
+
+            .content__travel {
+                position: unset;
+                width: 100%; 
+            }   
+        }
+    }
+}
+
+/* Tablet >= 740px and < 1024px */
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+
+    .mt-table-15 { 
+        margin-top: 15px;
+    }
+
+    .mt-table-24 {
+        margin-top: 24px;
+    }
+
+    #sticked {
+        display: none;
+    }
+
+    // Begin Header
+    
+    #header {
+        min-height: 76px;
+        margin: 10px 0px 30px;
+    }
+
+    .nav {
+        display: none; 
+    }
+
+    #header .header__wp {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #header .header_menu {
+        display: block; 
+        margin-top: 5px;
+
+        i {
+            font-size: 30px;
+            color: #555555;
+        }
+    }
+
+    // End Header
+
+    // Begin Slider
+    #slider {
+        padding-top: 77.08%;
+
+        .slider__title {
+            display: none;
+        }
+
+        .slider__text {
+            display: none;
+        }
+
+        .slider__buy {
+            bottom: 10%;
+            right: 50%;
+            transform: translateX(50%);
+
+            .slider__buy-btn {
+                font-weight: bold;
+            }
+
+            .slider__buy-sale {
+                display: none;
+            }
+        }
+    }
+    // End Slider
+
+    // Begin Content
+    #content {
+
+        .content__experience {
+
+            .content__experience-main {
+                padding: 0 0 20px 0;
+            }
+
+            .content__travel {
+                position: unset;
+                width: 100%;
+            } 
+        }
+
+        .content__services {
+            padding: 80px 0px;
+
+            .content__services-main-ders {
+                padding-left: 20px;
+            }
+        }
+
+        .content__summer {
+
+            .content__summer-ders {
+                margin: 0;
+            }
+
+            .content__summer-title {
+                display: inline-block;
+            }
+
+            .content__summer-detail {
+                padding: 15px;
+            }
+        }
+    }
+    // End Content
+
+    // Begin Footer
+    #footer {
+        height: 1196px;
+
+        .footer__content {
+
+            .fotter__contact {
+                padding-top: 40px;
+
+                h5 {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .footer__copy-right {
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+
+            p {
+                padding: 20px;
+            }
+        }
+ 
+    }
+    // End Footer
+  
+}
+
+/* Mobie < 740px */
+@media screen and (max-width: 46.1875em) {
+    .mb-mobile-24 {
+        margin-bottom: 24px;
+    }
+
+    #sticked {
+        display: none;
+    }
+
+     // Begin Header
+    #header {
+        min-height: 76px;
+        margin: 10px 0px 30px;
+    }
+
+    .nav {
+        display: none; 
+    }
+
+    #header .header__wp {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #header .header_menu {
+        display: block; 
+        margin-top: 5px;
+
+        i {
+            font-size: 30px;
+            color: #555555;
+        }
+    }
+
+    // End Header
+
+     // Begin Slider
+     #slider {
+        padding-top: 104.01%;
+
+        .slider__title {
+            display: none;
+        }
+
+        .slider__text {
+            display: none;
+        }
+
+        .slider__buy {
+            bottom: 10%;
+            right: 50%;
+            transform: translateX(50%);
+
+            .slider__buy-btn {
+                font-weight: bold;
+                font-size: 17px;
+                padding: 3px 34px;
+                line-height: 43px;
+            }
+
+            .slider__buy-sale {
+                display: none;
+            }
+        }
+    }
+    // End Slider
+
+    // Begin Content
+    #content {
+
+        .content__experience {
+            padding: 0px 50px;
+            .content__experience-main {
+                margin-bottom: 20px;
+                padding: 0;
+            }
+
+            .content__travel {
+                position: unset;
+                width: 100%;
+            } 
+        }
+
+        .content__services {
+            padding: 80px 50px;
+        }
+
+        .content__summer {
+             padding: 0px 50px;
+        }
+
+        .content__blog {
+            padding: 0px 50px;
+
+            .content__blog-main {
+                flex-direction: column;
+
+                .content__blog-img {
+                    padding-top: 76.66%;
+                }
+            }
+
+            .mobile-flex-reverse {
+                flex-direction: column-reverse;
+            }
+        }
+    }
+    // End Content
+
+    // Begin Footer
+    #footer {
+        height: 1378px;
+        padding: 0px 50px;
+
+        .footer__content {
+
+            .fotter__contact {
+                padding-top: 40px;
+
+                h5 {
+                    margin-bottom: 20px; 
+                }
+            }
+        }
+
+        .footer__copy-right {
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+
+            p {
+                padding: 20px;
+            }
+        }
+ 
+    }
+    // End Footer
+}
+//------------------------------- End Index-------------------------------
+
+
+// ----------------------------- Begin Search-2 --------------------------
+/* Tablet >= 740px and < 1024px */
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    #slider-search-2 {
+        padding-top: 43.3%;
+        height: 0;
+
+        .slider__content {
+             top: -131px;
+        }
+
+        .option {
+            display: none;
+        }
+
+        .more {
+            display: none;
+        }
+    }
+    
+    .option-on-tablet-mobile {
+        display: block;
+
+        .option__filters-check {
+            padding-left: 20% !important;
+        }
+    }
+}
+
+/* Mobie < 740px */
+@media screen and (max-width: 46.1875em) {
+    #slider-search-2 {
+        padding-top: 89%;
+        height: 0;
+
+        .slider__content {
+            top: -200px;
+            padding: 35px;
+       }
+
+       .option {
+           display: none;
+       }
+
+       .more {
+           display: none;
+       }
+    }
+
+    .option-on-tablet-mobile {
+        display: block;
+
+        .option__filters-check {
+            left: 25%;
+            width: 50% !important;
+        }
+    }
+
+    #content-search-2 {
+        padding: 0px 35px;
+    }
+}
+// ------------------------------ End Search-2 ---------------------------
+
+
+
+// ------------------------------ Begin Berlin ---------------------------
+/* Tablet >= 740px and < 1024px */
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    #slider-berlin {
+        padding-top: 42.62%;
+    }
+
+    .content-berlin__main-detail {
+
+        .content-berlin__main-nav-list {
+            flex-direction: column;
+
+            li {
+                margin-bottom: 20px;
+            }
+        }
+
+    }
+
+    .content-berlin__main-sidebar {
+
+        .content-berlin__main-sidebar-packages {
+
+            .content-berlin__main-sidebar-packages-img {
+                img {
+                    width: 68% !important;
+                }
+            }
+
+            .content-berlin__main-sidebar-packages-img-detail {
+                margin-left: -32px;
+            }
+        }
+
+        .content-berlin__main-sidebar-feedback {
+
+            .content-berlin__main-sidebar-feedback-message::after {
+                left: 3% !important;
+            }
+        }
+    }
+}
+
+/* Mobie < 740px */
+@media screen and (max-width: 46.1875em) {
+    #slider-berlin {
+        padding-top: 76.93%;
+
+        .slider-berlin__title,
+        .slider-berlin__ders {
+            left: 70px;
+        }
+    }
+
+    #content-berlin {
+        padding: 0px 70px;
+    }
+
+    .content-berlin__main-detail {
+
+        .content-berlin__main-nav-list {
+            flex-direction: column;
+
+            li {
+                margin-bottom: 20px;
+            }
+        }
+
+        .content-berlin__main-daybyday {
+
+            .content-berlin__main-daybyday-detail {
+
+                .content-berlin__main-daybyday-detail-item {
+
+                    .content-berlin__main-daybyday-detail-item-title {
+                        align-items: flex-start !important;
+
+                        .content-berlin__main-daybyday-detail-item-title-img {
+                            width: 65px !important;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .content-berlin__main-sidebar-packages {
+        .content-berlin__main-sidebar-packages-img {
+            img {
+                width: 100% !important;
+            }
+        }
+
+        .content-berlin__main-sidebar-packages-img-detail {
+            margin-left: 20px; 
+            margin-top: -10px;
+        }
+    }
+
+    .content-berlin__main-sidebar-feedback {
+
+        .content-berlin__main-sidebar-feedback-message::after {
+            bottom: -30px !important;
+            left: 17px !important;
+        }
+    }
+}
+// ------------------------------- End Berlin ----------------------------
+
+
+
+// ------------------------------- Begin About Us ----------------------------
+/* Tablet >= 740px and < 1024px */
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .mb-tablet-60 {
+        margin-bottom: 60px;
+    }
+
+    #slider-about {
+        padding-top: 40.3125%;
+    }
+
+    #content-about {
+
+        .content-about__introduce {
+
+            .content-about__introduce-main {
+                
+                .content-about__introduce-main-title {
+                    h1 {
+                        text-align: center;
+                    }
+                }
+
+                .content-about__introduce-main-text {
+                    text-align: center;
+                }
+            }
+        }
+
+        .content-about__count {
+            padding-top: 98.56%;
+            background-position: center;
+
+            .content-about__count-main {
+                padding: 100px 20px;
+            }
+        }
+
+        .content-about__services {
+
+            .content-about__services-main {
+
+                .content-about__services-main-text,
+                .content-about__services-main-link {
+                   margin-left: 16px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Mobie < 740px */
+@media screen and (max-width: 46.1875em) {
+    .mb-mobile-60 {
+        margin-bottom: 60px;
+    }
+
+    #slider-about {
+        padding-top: 74.7%;
+
+        .slider-about__title {
+            left: 50px; 
+        }
+    }
+
+    #content-about {
+
+        .content-about__introduce {
+            padding: 0px 50px;
+
+            .content-about__introduce-main {
+                
+                .content-about__introduce-main-title {
+                    padding: 0;
+
+                    h1 {
+                        text-align: center;
+                    }
+                }
+
+                .content-about__introduce-main-text {
+                    text-align: center;
+                }
+            }
+        }
+
+        .content-about__recommend {
+            padding: 0px 50px;
+        }
+
+        .content-about__count {
+            padding-top: 230.77%;
+            background-position: center;
+
+            .content-about__count-main {
+                padding: 100px 50px;
+            }
+        }
+
+        .content-about__services {
+            padding: 0px 50px;
+        }
+    }
+
+}
+// -------------------------------- End About Us -----------------------------
+
+
+
+// -------------------------------- Begin Services -----------------------------
+/* Tablet >= 740px and < 1024px */
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .pd-left-16 {
+        padding-left: 16px;
+    }
+    
+    #slider-services {
+        padding-top: 40.3125%;
+    }
+
+    .content-services__about {
+
+        .content-services__about-main {
+            height: 370px;
+            background-position: center -5px;
+
+            .content-services__about-detail {
+                height: 290px;
+            }
+        }
+    }
+
+    .content-services__facilities {
+        height: 1210px;
+
+        .content-services__facilities-main {
+            padding: 45px 0px;
+        }
+    }
+
+    .content-services__benefits {
+        margin-top: 964px;
+    }
+
+    .content-services__count {
+        padding-top: 98.56%;
+        background-position: center;
+
+        .content-services__count-main {
+            padding: 100px 50px;
+        }
+    }
+} 
+
+/* Mobie < 740px */
+@media screen and (max-width: 46.1875em) {
+    #slider-services {
+        padding-top: 74.7%;
+
+        .slider-services__title {
+            left: 50px; 
+        }
+    }
+
+    #content-services {
+
+        .content-services__introduce {
+            padding: 0px 50px;
+        }
+
+        .content-services__about {
+            padding: 0px 50px;
+
+            .content-services__about-main {
+                height: 617px;
+                background-position: center left ;
+    
+                .content-services__about-detail {
+                    height: 537px;
+                    padding: 50px;
+                }
+            }
+        }
+
+        .content-services__facilities {
+            height: 1359px;
+    
+            .content-services__facilities-main {
+                padding: 45px 50px;
+            }
+        }
+
+        .content-services__benefits {
+            margin-top: 964px;
+            padding: 0px 50px;
+        }
+
+        .content-services__count {
+            padding-top: 230.773%;
+            background-position: center;
+    
+            .content-services__count-main {
+                padding: 100px 50px;
+            }
+        }
+    }
+}
+// --------------------------------- End Services ------------------------------
+

@@ -1,0 +1,227 @@
+// Begin Slider
+#slider {
+    background-image: url(/tuanna/class_html_done/assets/img/slider/slide-01.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 54.24%;
+    // height: 800px;
+    visibility: inherit;
+    // z-index: 1;
+
+    .slider__timming {
+        height: 8px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 0;
+        animation: moveLeft linear 5s 1s infinite;
+    }
+
+    .slider__title {
+        position: absolute;
+        top: 180px;
+        right: 225px;
+        // animation:  rotatetSliderTitle ease 2s forwards;
+        transform: rotate(-2deg);
+
+        .slider__title-text {
+            background-color: rgb(85, 85, 85);  
+            font-size: 45px;
+            line-height: 45px;
+            padding: 5px 20px 10px;
+            z-index: 5;
+            visibility: inherit;
+            margin-bottom: 5px;
+            
+            color: #fff;
+            text-align: center;
+            letter-spacing: 0;
+            animation: moveRightSliderTitle ease 1s;
+
+            .slider__title-special {
+                color: #f3a46b;
+            }
+        }
+
+        .slider__title-text:last-child {
+            animation: moveLeftSliderTitle ease 1s;
+        }
+    }
+
+    .slider__text {
+        position: absolute;
+        top: 348px;
+        right: 250px;
+        width: 375px;
+
+         p,i {
+            font-size: 20px;
+            line-height: 30px;
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        i {
+            margin-right: 25px;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .slider__text-flex {
+            display: flex;
+            margin-bottom: 30px;
+            animation: moveUp ease 1s;
+        }        
+    }
+
+    .slider__buy {
+        position: absolute;
+        bottom: 104px;
+        right: 330px;
+
+        .slider__buy-btn {
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 400;
+            color: rgb(255, 255, 255);
+            background-color: rgb(243, 164, 107);
+            border-color: rgb(0, 0, 0);
+            border-radius: 50px;
+            display: block;
+            text-decoration: none;
+            padding: 15px 50px;
+            text-transform: uppercase;
+            transition: border-radius ease 0.2s;
+            animation: btnBuy ease 1s;
+        }
+
+        .slider__buy-btn:hover {
+            border-radius: 0;
+        }
+
+        .slider__buy-sale {
+            position: absolute;
+            z-index: 11;
+            background-color: rgb(85, 85, 85);
+            width: 50px;
+            height: 50px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 50px;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            top: -24px;
+            right: -22px;
+            animation: buySale ease 1.2s;
+        }
+    }
+
+    .slider__move {
+        .slider__move-left,
+        .slider__move-right {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 40px;
+            -webkit-transition: all 0.3s;
+            color: #fff;
+            display: block;
+            text-align: center;
+            font-weight: initial;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            cursor: pointer;
+        }
+
+        .slider__move-left {
+            left: 0%;
+            // transform: matrix(1, 0, 0, 1, 20, 25);
+        }
+
+        .slider__move-right {
+            right: 1%;
+        }
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%); 
+    }
+}
+
+@keyframes moveLeftSliderTitle {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%); 
+        opacity: 1;
+    }
+}
+
+@keyframes moveRightSliderTitle {
+    0% {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes rotatetSliderTitle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-2deg);
+
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(300%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateyY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes btnBuy {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes buySale {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+// End Slider
